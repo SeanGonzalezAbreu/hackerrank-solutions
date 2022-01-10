@@ -4,7 +4,7 @@
  * The function is expected to return an INTEGER.
  * The function accepts 2D_INTEGER_ARRAY arr as parameter.
  */
-const TEST_ARRAY_2D: number[][] = [
+const TEST_ARRAY: number[][] = [
     [1, 1, 1, 0, 0, 0],
     [0, 1, 0, 0, 0, 0],
     [1, 1, 1, 0, 0, 0],
@@ -13,13 +13,13 @@ const TEST_ARRAY_2D: number[][] = [
     [0, 0, 1, 2, 4, 0],
 ];
 
-const hourglassSum = (array: number[][]) => {
+export const hourglassSum = (array: number[][]) => {
     // Write your code here
     let largestHourglass = 0;
 
     for (let i = 0; i < 4; i++) {
         for (let j = 0; j < 4; j++) {
-            const hourglass: Array<number> = [
+            const hourglass: number[] = [
                 array[i][j],
                 array[i][j + 1],
                 array[i][j + 2],
@@ -43,4 +43,4 @@ const hourglassSum = (array: number[][]) => {
     return largestHourglass;
 };
 
-hourglassSum(TEST_ARRAY_2D)// 19
+hourglassSum(TEST_ARRAY)// 19

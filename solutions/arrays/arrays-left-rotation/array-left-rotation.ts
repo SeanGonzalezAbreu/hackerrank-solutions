@@ -9,10 +9,12 @@
 
 const TEST_ARRAY = [1, 2, 3, 4, 5];
 
-const rotateLeft = (array: number[], rotations: number) => {
+export const rotateLeft = (array: number[], rotations: number) => {
     for (let index = 0; index < rotations; index++) {
         const firstElement = array[0];
+
         array.shift();
+        
         array.push(firstElement);
     }
 
