@@ -30,4 +30,4 @@ export const minimumBribes = (queue: number[]) => {
     console.log(bribes)
 }
 
-minimumBribes(TEST_QUEUE)
+minimumBribes(TEST_QUEUE) // 2
