@@ -10,7 +10,7 @@ const TEST_MAGAZINE = ['two', 'times', 'three', 'is', 'not', 'four'];
 
 const TEST_NOTE = ['two', 'times', 'two', 'is', 'four'];
 
-const checkMagazine = (magazine: string[], note: string[]) => {
+export const checkMagazine = (magazine: string[], note: string[]) => {
     // Write your code here   
     const foundWords: { [key: string]: number } = {};
 

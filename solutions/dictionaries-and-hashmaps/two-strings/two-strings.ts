@@ -15,7 +15,7 @@ const createHashMap = (word: string) => word.split('').reduce<{ [key: string]: b
  */
 const FIRST_WORD = 'hello', SECOND_WORD = 'world';
 
-const twoStrings = (firstWord: string, secondWord: string) => {
+export const twoStrings = (firstWord: string, secondWord: string) => {
     // Write your code here
     const firstLetters = createHashMap(firstWord), secondLetters = createHashMap(secondWord);
 

@@ -1,6 +1,6 @@
 const TEST_WORD = 'ifailuhkqq'
 
-const sherlockAndAnagrams = (word: string) => {
+export const sherlockAndAnagrams = (word: string) => {
     const letters = word.split("");
 
     const anagramDictionary: { [key: string]: number } = {};
