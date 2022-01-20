@@ -1,6 +1,6 @@
 const TEST_QUERY = [[1, 5], [1, 6], [3, 2], [1, 10], [1, 10], [1, 6], [2, 5], [3, 2]];
 
-const getQueryFrequency = (queries: number[][]) => {
+export const getQueryFrequency = (queries: number[][]) => {
     const dataTable: { [key: number]: number } = {}, frequencyTable: { [key: number]: number } = {}, results: number[] = [];
 
     queries.forEach(([operationKey, dataElement]) => {
@@ -40,4 +40,4 @@ const getQueryFrequency = (queries: number[][]) => {
     return results;
 }
 
-getQueryFrequency(TEST_QUERY); // [0,1]
+getQueryFrequency(TEST_QUERY); // [0, 1]
